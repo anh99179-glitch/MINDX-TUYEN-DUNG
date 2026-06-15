@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# HEIC files (original, use converted jpg)
+*.HEIC
+
+# Zip files
+*.zip
+
+# Temp/private folders
+hợp đồng/
+thiết kế ảnh/
+ladipage/
+ladi
+
+# Misc
+*.avif

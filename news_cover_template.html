@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindX Bản Tin Tuyển Dụng</title>
+    <!-- Import fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Exo:wght@400;700;800;900&family=Exo+2:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- Import thư viện icon FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2c2c2c;
+        }
+        /* Kích thước ảnh chuẩn đăng bài: 1200x630 */
+        .cover {
+            width: 1200px;
+            height: 630px;
+            background-color: #fdfaf9; /* Nền trắng hơi ngả ấm */
+            font-family: 'Exo 2', sans-serif;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        /* ----- Các khối nền trang trí (Màu đỏ MindX) ----- */
+        .shape-right {
+            position: absolute;
+            top: -50px;
+            right: -250px;
+            width: 600px;
+            height: 730px;
+            background-color: #D32F2F; 
+            border-radius: 50% 0 0 50%;
+            opacity: 0.15; /* Làm mờ khối nền */
+            z-index: 1;
+        }
+        .shape-bottom {
+            position: absolute;
+            bottom: -250px;
+            left: -100px;
+            width: 800px;
+            height: 400px;
+            background-color: #D32F2F;
+            border-radius: 50%;
+            opacity: 0.08;
+            z-index: 1;
+        }
+        
+        /* Nội dung chính */
+        .content {
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 35px; /* Giảm padding */
+        }
+        
+        /* ----- Tiêu đề ----- */
+        .logo {
+            font-size: 42px;
+            font-weight: 900;
+            color: #D32F2F;
+            letter-spacing: 2px;
+            margin-bottom: 15px; /* Kéo gần lại */
+        }
+        
+        .subtitle {
+            font-family: 'Exo', sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #3b3b3b;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 0px; /* Bỏ khoảng cách */
+        }
+        
+        /* Font chữ đậm, đặc giống ảnh tham khảo mới */
+        .title {
+            font-family: 'Anton', sans-serif;
+            font-size: 96px;
+            font-weight: 400;
+            color: #D32F2F;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px; /* Thu hẹp lại */
+            text-shadow: none; /* Bỏ bóng đổ 3D để chữ gọn gàng hơn */
+        }
+        
+        .question {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2a2a2a;
+            margin-bottom: 40px; /* Cho đẩy lên trên */
+        }
+        
+        /* ----- 3 Thẻ Box (Card) ----- */
+        .features {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 35px; /* Đẩy khối CV lên trên */
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            box-shadow: 0 10px 25px rgba(211, 47, 47, 0.08);
+            border: 2px solid #fff2f2;
+            min-width: 280px;
+        }
+        .feature-icon {
+            width: 55px;
+            height: 55px;
+            background-color: #D32F2F;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        .feature-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .feature-text .highlight {
+            font-size: 26px;
+            font-weight: 800;
+            color: #222;
+        }
+        .feature-text .subtext {
+            font-size: 16px;
+            font-weight: 600;
+            color: #666;
+            margin-top: 5px;
+            line-height: 1.3;
+        }
+        
+        /* ----- Nút Call to Action cuối trang ----- */
+        .contact-pill {
+            display: flex;
+            align-items: center;
+            border: 2px solid #222;
+            border-radius: 50px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .contact-pill-left {
+            padding: 14px 35px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+        }
+        .contact-pill-right {
+            padding: 14px 35px;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: #D32F2F;
+            color: white;
+            border-left: 2px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <!-- Các khối nền trang trí -->
+        <div class="shape-right"></div>
+        <div class="shape-bottom"></div>
+        
+        <!-- Nội dung -->
+        <div class="content">
+            <div class="logo">MindX</div>
+            
+            <div class="subtitle">Cập Nhật</div>
+            <div class="title">Bản Tin Tuyển Dụng</div>
+            <div class="question">Tháng 6 này MindX có gì?</div>
+            
+            <div class="features">
+                <!-- Thẻ 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-building"></i></div>
+                    <div class="feature-text">
+                        <span class="highlight">50+</span>
+                        <span class="subtext">cơ sở trên toàn quốc</span>
+                    </div>
+                </div>
+                
+                <!-- Thẻ 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="feature-text">
+                        <span class="highlight" style="font-size: 20px;">TP. HÀ NỘI</span>
+                        <span class="highlight" style="font-size:20px;">TP. HỒ CHÍ MINH</span>
+                    </div>
+                </div>
+                
+                <!-- Thẻ 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="feature-text">
+                        <span class="highlight" style="font-size: 24px;">Thu nhập</span>
+                        <span class="subtext">lương thưởng rõ ràng</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Phần chèn contact -->
+            <div class="contact-pill">
+                <div class="contact-pill-left">Send your CV to</div>
+                <div class="contact-pill-right">tuyendung@mindx.edu.vn</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
