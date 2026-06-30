@@ -24,6 +24,7 @@
                 <span class="badge">Careers</span>
             </a>
             <nav class="nav-links">
+                <a href="#about">Về MindX</a>
                 <a href="#why-join">Vì sao chọn MindX</a>
                 <a href="#positions">Vị trí tuyển dụng</a>
                 <a href="#life">Life at MindX</a>
@@ -61,25 +62,25 @@
                                 class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
                     </div>
 
-                    <div class="hero-trust-badges">
+                    <div class="hero-trust-badges" id="trust-badges">
                         <div class="trust-item">
                             <div class="trust-icon"><i class="fa-solid fa-school"></i></div>
                             <div class="trust-info">
-                                <strong>50+</strong>
+                                <strong class="count-up" data-target="50" data-suffix="+">50+</strong>
                                 <span>Cơ sở toàn quốc</span>
                             </div>
                         </div>
                         <div class="trust-item">
                             <div class="trust-icon"><i class="fa-solid fa-users"></i></div>
                             <div class="trust-info">
-                                <strong>1,000+</strong>
+                                <strong class="count-up" data-target="1000" data-suffix="+" data-separator=",">1,000+</strong>
                                 <span>MindXers đồng hành</span>
                             </div>
                         </div>
                         <div class="trust-item">
                             <div class="trust-icon"><i class="fa-solid fa-circle-check"></i></div>
                             <div class="trust-info">
-                                <strong>Lộ trình</strong>
+                                <strong class="count-text-pulse">Lộ trình</strong>
                                 <span>Phát triển rõ ràng</span>
                             </div>
                         </div>
@@ -126,34 +127,223 @@
         </div>
     </section>
 
+    <!-- About MindX -->
+    <section class="about-mindx" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Giới thiệu & Sứ mệnh -->
+                <div class="about-content">
+                    <div class="section-badge">Về MindX</div>
+                    <h2 class="section-title" style="text-align: left;">Kiến tạo thế hệ <span class="gradient-text">nhân tài công nghệ</span></h2>
+                    <p class="about-desc">
+                        MindX Technology School là hệ sinh thái giáo dục và khởi nghiệp công nghệ hàng đầu tại Việt Nam. Không chỉ dừng lại ở việc giảng dạy lập trình, chúng tôi trang bị cho thế hệ trẻ tư duy đột phá, kỹ năng số toàn diện và tinh thần khởi nghiệp mạnh mẽ để tự tin làm chủ tương lai. Tại MindX, mọi ý tưởng đều được nuôi dưỡng để trở thành hiện thực.
+                    </p>
+                    
+                    <div class="mission-box">
+                        <div class="mission-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div>
+                            <h3>Sứ mệnh</h3>
+                            <p>Xây dựng hệ sinh thái giáo dục và khởi nghiệp lớn nhất khu vực, đưa Việt Nam trở thành trung tâm công nghệ thế giới thông qua mạng lưới "Thung lũng Silicon thu nhỏ" (Little Silicon Valley) trên khắp mọi miền đất nước.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Giá trị cốt lõi -->
+                <div class="core-values">
+                    <h3>Giá trị cốt lõi</h3>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div class="value-text">
+                                <strong>Sáng tạo</strong>
+                                <span>Không bị ràng buộc bởi giới hạn, luôn tìm cách tiếp cận mới, thử nghiệm ý tưởng khác biệt và chưa từng có tiền lệ.</span>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <div class="value-text">
+                                <strong>Chính trực</strong>
+                                <span>Luôn hành động theo chuẩn mực đạo đức khắt khe nhất, đảm bảo tính minh bạch và trung thực tuyệt đối.</span>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-mountain"></i></div>
+                            <div class="value-text">
+                                <strong>Kiên cường</strong>
+                                <span>Mọi thử thách đều là "viên đá lát đường". Các MindXers không bao giờ dễ dàng từ bỏ hay khuất phục trước khó khăn.</span>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <div class="value-text">
+                                <strong>Tự tin chiến thắng</strong>
+                                <span>Tinh thần chiến đấu hết mình, quyết tâm vượt qua và chiến thắng mọi thử thách bằng mọi giá.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Mạng lưới cơ sở -->
+    <section class="network-section" id="network">
+        <div class="container">
+            <div class="network-header">
+                <h2 class="section-title">Mạng lưới cơ sở <span>rộng khắp Việt Nam</span></h2>
+                <p class="section-subtitle">MindX hiện diện tại nhiều tỉnh thành trên cả nước, mang cơ hội học công nghệ đến gần hơn với mọi học viên.</p>
+            </div>
+
+            <!-- Bản đồ cơ sở theo vùng -->
+            <div class="network-regions">
+                <div class="region-card">
+                    <div class="region-icon"><i class="fa-solid fa-map-pin"></i></div>
+                    <h4>Hà Nội</h4>
+                    <ul>
+                        <li>Cầu Giấy</li>
+                        <li>Hoàng Mai</li>
+                        <li>Long Biên</li>
+                        <li>Hà Đông</li>
+                        <li>Thanh Xuân</li>
+                        <li>Đống Đa</li>
+                        <li>Nam Từ Liêm</li>
+                        <li>Bắc Từ Liêm</li>
+                    </ul>
+                </div>
+                <div class="region-card">
+                    <div class="region-icon"><i class="fa-solid fa-map-pin"></i></div>
+                    <h4>TP. Hồ Chí Minh</h4>
+                    <ul>
+                        <li>Quận 1</li>
+                        <li>Quận 3</li>
+                        <li>Quận 7</li>
+                        <li>Quận 10</li>
+                        <li>Bình Thạnh</li>
+                        <li>Tân Bình</li>
+                    </ul>
+                </div>
+                <div class="region-card">
+                    <div class="region-icon"><i class="fa-solid fa-map-pin"></i></div>
+                    <h4>Các Tỉnh thành</h4>
+                    <ul>
+                        <li>Đà Nẵng</li>
+                        <li>Bắc Giang</li>
+                        <li>Hải Phòng</li>
+                        <li>Hải Dương</li>
+                        <li>Nam Định</li>
+                        <li>Nghệ An</li>
+                        <li>Thanh Hoá</li>
+                        <li>Huế</li>
+                        <li>Cần Thơ</li>
+                        <li>Bình Dương</li>
+                        <li>Đồng Nai</li>
+                        <li>Vũng Tàu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 2. Why Join MindX -->
     <section class="why-join" id="why-join">
-        <div class="container">
-            <h2 class="section-title">Vì Sao Trở Thành <span>MindXers?</span></h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-rocket"></i></div>
-                    <h3>Môi trường startup tăng trưởng nhanh</h3>
+        <div class="why-join-bg"></div>
+        <div class="container relative-z">
+            <div class="section-header text-center">
+                <div class="section-badge mx-auto" style="display:inline-block; padding:8px 18px; background:rgba(227,31,38,0.07); color:var(--mindx-red); font-weight:800; border-radius:50px; font-size:0.8rem; margin-bottom:20px; border:1px solid rgba(227,31,38,0.15); text-transform:uppercase;">Quyền Lợi Đặc Quyền</div>
+                <h2 class="section-title">Vì Sao Chọn Trở Thành <span>MindXers?</span></h2>
+                <p class="section-subtitle">Gia nhập MindX không chỉ là bắt đầu một công việc mới, mà là bước vào một hành trình bứt phá giới hạn bản thân với những đặc quyền có "1-0-2".</p>
+            </div>
+            
+            <div class="features-grid-advanced">
+                <!-- Card 1 -->
+                <div class="feature-card-pro card-red" onclick="toggleCardDetail(this)">
+                    <div class="feature-icon-pro"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>Tăng trưởng bứt tốc</h3>
+                    <p>Môi trường startup công nghệ phát triển thần tốc, mang lại cơ hội thử thách và khẳng định bản thân vô hạn.</p>
+                    <span class="card-toggle"><i class="fa-solid fa-chevron-down"></i> Xem chi tiết</span>
+                    <div class="card-detail">
+                        <ul>
+                            <li>Tốc độ tăng trưởng doanh thu hàng năm trên 200%, mở ra vô vàn cơ hội mới.</li>
+                            <li>Liên tục mở rộng thị trường sang các tỉnh thành và quốc tế.</li>
+                            <li>Được tham gia trực tiếp vào các dự án chiến lược, có tác động lớn tới hàng triệu học viên.</li>
+                            <li>Văn hóa "move fast" – thử, sai, học, làm lại nhanh hơn.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
-                    <h3>Đồng nghiệp trẻ & truyền cảm hứng</h3>
+                <!-- Card 2 -->
+                <div class="feature-card-pro card-blue" onclick="toggleCardDetail(this)">
+                    <div class="feature-icon-pro"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Học hỏi không ngừng</h3>
+                    <p>Được tham gia các khóa đào tạo nội bộ chuyên sâu, tiếp cận công nghệ mới và học bổng các khóa học tại MindX.</p>
+                    <span class="card-toggle"><i class="fa-solid fa-chevron-down"></i> Xem chi tiết</span>
+                    <div class="card-detail">
+                        <ul>
+                            <li>Miễn phí 100% các khóa học lập trình, AI, Data tại MindX cho nhân viên.</li>
+                            <li>Chương trình MindX Academy với các buổi chia sẻ nội bộ hàng tuần từ các Leader.</li>
+                            <li>Hỗ trợ kinh phí tham gia hội thảo, sự kiện công nghệ trong và ngoài nước.</li>
+                            <li>Thư viện tài liệu, khóa học online nội bộ phong phú, cập nhật liên tục.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3>Lộ trình phát triển rõ ràng</h3>
+                <!-- Card 3 -->
+                <div class="feature-card-pro card-yellow" onclick="toggleCardDetail(this)">
+                    <div class="feature-icon-pro"><i class="fa-solid fa-sack-dollar"></i></div>
+                    <h3>Thu nhập & Thưởng hấp dẫn</h3>
+                    <p>Chính sách lương thưởng cạnh tranh, đánh giá tăng lương định kỳ dựa trên năng lực và đóng góp thực tế.</p>
+                    <span class="card-toggle"><i class="fa-solid fa-chevron-down"></i> Xem chi tiết</span>
+                    <div class="card-detail">
+                        <ul>
+                            <li>Mức lương cạnh tranh top thị trường, review tăng lương 2 lần/năm.</li>
+                            <li>Thưởng KPI theo tháng/quý, thưởng dự án và thưởng Tết hấp dẫn.</li>
+                            <li>Phụ cấp ăn trưa, gửi xe, điện thoại và các chi phí công việc.</li>
+                            <li>Bảo hiểm sức khỏe toàn diện cho nhân viên chính thức.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                    <h3>Đào tạo nội bộ liên tục</h3>
+                <!-- Card 4 -->
+                <div class="feature-card-pro card-green" onclick="toggleCardDetail(this)">
+                    <div class="feature-icon-pro"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3>Lộ trình thăng tiến rõ ràng</h3>
+                    <p>Cơ hội trở thành Leader/Manager từ rất sớm với cơ chế đánh giá minh bạch, tạo điều kiện cho các tài năng trẻ.</p>
+                    <span class="card-toggle"><i class="fa-solid fa-chevron-down"></i> Xem chi tiết</span>
+                    <div class="card-detail">
+                        <ul>
+                            <li>Lộ trình career path được xây dựng rõ ràng cho từng vị trí (IC & Manager track).</li>
+                            <li>Đánh giá năng lực minh bạch hàng quý, thăng chức theo năng lực thực tế.</li>
+                            <li>Nhiều nhân sự Gen Z đã trở thành Team Leader, Manager chỉ sau 6-12 tháng.</li>
+                            <li>Cơ hội luân chuyển nội bộ giữa các phòng ban và dự án mới.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-sack-dollar"></i></div>
-                    <h3>Thu nhập + thưởng hấp dẫn</h3>
+                <!-- Card 5 -->
+                <div class="feature-card-pro card-purple" onclick="toggleCardDetail(this)">
+                    <div class="feature-icon-pro"><i class="fa-solid fa-users-viewfinder"></i></div>
+                    <h3>Đồng nghiệp Gen Z cực "chất"</h3>
+                    <p>Làm việc cùng những cộng sự trẻ trung, nhiệt huyết, sẵn sàng hỗ trợ nhau trong cả công việc lẫn cuộc sống.</p>
+                    <span class="card-toggle"><i class="fa-solid fa-chevron-down"></i> Xem chi tiết</span>
+                    <div class="card-detail">
+                        <ul>
+                            <li>Độ tuổi trung bình nhân sự MindX chỉ từ 23-28 – trẻ trung, năng động.</li>
+                            <li>Team building hàng tháng, du lịch công ty hàng năm.</li>
+                            <li>Văn hóa mở: không khoảng cách cấp bậc, thoải mái đề xuất ý tưởng.</li>
+                            <li>Cộng đồng MindXers với các CLB thể thao, game, nghệ thuật nội bộ.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
-                    <h3>Làm việc với sản phẩm giáo dục ý nghĩa</h3>
+                <!-- Card 6 -->
+                <div class="feature-card-pro card-orange" onclick="toggleCardDetail(this)">
+                    <div class="feature-icon-pro"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>Giá trị xã hội ý nghĩa</h3>
+                    <p>Góp phần vào sứ mệnh nâng tầm giáo dục Việt Nam, mang tri thức công nghệ đến hàng triệu người Việt trẻ.</p>
+                    <span class="card-toggle"><i class="fa-solid fa-chevron-down"></i> Xem chi tiết</span>
+                    <div class="card-detail">
+                        <ul>
+                            <li>MindX đã đào tạo hơn 100,000+ học viên trên khắp Việt Nam.</li>
+                            <li>Chương trình MindX Scholarship trao học bổng cho học sinh có hoàn cảnh khó khăn.</li>
+                            <li>Đóng góp trực tiếp vào mục tiêu "100,000 lập trình viên cho Việt Nam".</li>
+                            <li>Sản phẩm giáo dục mang lại giá trị thực, thay đổi tương lai thế hệ trẻ.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,7 +361,7 @@
                         <p class="job-meta"><i class="fa-solid fa-location-dot"></i> Toàn quốc</p>
                         <p class="job-meta"><i class="fa-solid fa-money-bill-wave"></i> 20M - 30M</p>
                     </div>
-                    <a href="#cta" class="btn btn-primary btn-sm">Quick Apply</a>
+                    <button onclick="openJDModal('Quản lý trung tâm')" class="btn btn-primary btn-sm">Xem JD & Apply</button>
                 </div>
                 <!-- Job 2 -->
                 <div class="job-card">
@@ -180,7 +370,7 @@
                         <p class="job-meta"><i class="fa-solid fa-location-dot"></i> Toàn quốc</p>
                         <p class="job-meta"><i class="fa-solid fa-money-bill-wave"></i> 15M - 25M</p>
                     </div>
-                    <a href="#cta" class="btn btn-primary btn-sm">Quick Apply</a>
+                    <button onclick="openJDModal('Chuyên viên tư vấn tuyển sinh')" class="btn btn-primary btn-sm">Xem JD & Apply</button>
                 </div>
                 <!-- Job 3 -->
                 <div class="job-card">
@@ -189,7 +379,7 @@
                         <p class="job-meta"><i class="fa-solid fa-location-dot"></i> Toàn quốc</p>
                         <p class="job-meta"><i class="fa-solid fa-money-bill-wave"></i> 10M - 15M</p>
                     </div>
-                    <a href="#cta" class="btn btn-primary btn-sm">Quick Apply</a>
+                    <button onclick="openJDModal('Chăm sóc khách hàng')" class="btn btn-primary btn-sm">Xem JD & Apply</button>
                 </div>
                 <!-- Job 4 -->
                 <div class="job-card">
@@ -198,7 +388,7 @@
                         <p class="job-meta"><i class="fa-solid fa-location-dot"></i> Toàn quốc</p>
                         <p class="job-meta"><i class="fa-solid fa-money-bill-wave"></i> 15M - 25M</p>
                     </div>
-                    <a href="#cta" class="btn btn-primary btn-sm">Quick Apply</a>
+                    <button onclick="openJDModal('Trưởng nhóm chăm sóc khách hàng')" class="btn btn-primary btn-sm">Xem JD & Apply</button>
                 </div>
                 <!-- Job 5 -->
                 <div class="job-card">
@@ -207,7 +397,7 @@
                         <p class="job-meta"><i class="fa-solid fa-location-dot"></i> Hà Nội, TP.HCM</p>
                         <p class="job-meta"><i class="fa-solid fa-money-bill-wave"></i> 13M - 18M</p>
                     </div>
-                    <a href="#cta" class="btn btn-primary btn-sm">Quick Apply</a>
+                    <button onclick="openJDModal('Digital Marketing')" class="btn btn-primary btn-sm">Xem JD & Apply</button>
                 </div>
                 <!-- Job 6 -->
                 <div class="job-card">
@@ -216,7 +406,7 @@
                         <p class="job-meta"><i class="fa-solid fa-location-dot"></i> Hà Nội</p>
                         <p class="job-meta"><i class="fa-solid fa-money-bill-wave"></i> 13M - 18M</p>
                     </div>
-                    <a href="#cta" class="btn btn-primary btn-sm">Quick Apply</a>
+                    <button onclick="openJDModal('Content Marketing')" class="btn btn-primary btn-sm">Xem JD & Apply</button>
                 </div>
             </div>
         </div>
@@ -327,9 +517,10 @@
     <!-- 7. Final CTA Banner -->
     <section class="final-cta" id="cta">
         <div class="container cta-container glass-panel">
-            <h2>Ứng tuyển hôm nay – Trở thành một phần của MindX!</h2>
-            <p>Đừng bỏ lỡ cơ hội làm việc tại một trong những startup giáo dục công nghệ phát triển nhanh nhất Việt Nam.
-            </p>
+            <div class="cta-header">
+                <h2 class="cta-heading">Ứng tuyển hôm nay <span class="cta-highlight">Trở thành một phần của MindX!</span></h2>
+                <p class="cta-desc">Đừng bỏ lỡ cơ hội làm việc tại một trong những startup giáo dục công nghệ phát triển nhanh nhất Việt Nam.</p>
+            </div>
 
             <!-- Form ứng tuyển -->
             <form class="apply-form" id="applyForm" onsubmit="submitToGoogleSheet(event)">
@@ -349,6 +540,10 @@
                     </select>
                     <input type="text" id="applicant-city" placeholder="Thành phố / Khu vực *" class="full-width"
                         required>
+                    <div class="full-width" style="margin-top: 10px; text-align: left;">
+                        <label for="applicant-cv" style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--text-main);">Tải CV lên (Tối đa 5MB) *</label>
+                        <input type="file" id="applicant-cv" accept=".pdf,.doc,.docx" required style="width: 100%; padding: 10px; border: 1px solid var(--border-light); border-radius: 8px; background: #fff;">
+                    </div>
                 </div>
 
                 <!-- Trạng thái gửi form -->
@@ -363,20 +558,106 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <img src="Xz0XnDrB416uay5Ugb0bLFQVHKFcVdkL_1692257186____e899760276d6b10d8c66829607d5c48e.jpg"
-                    alt="MindX Logo" style="height: 100px; object-fit: contain;">
+
+    <footer class="mindx-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Contact -->
+                <div class="footer-col brand-col">
+                    <img src="Xz0XnDrB416uay5Ugb0bLFQVHKFcVdkL_1692257186____e899760276d6b10d8c66829607d5c48e.jpg" alt="MindX Logo" class="footer-logo-img">
+                    <p class="company-name">Công ty Cổ phần Trường học Công nghệ MindX</p>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.88rem; margin-bottom: 14px;">MSDN: 0110021468</p>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i> Tầng 2, Tòa 29T1 Hoàng Đạo Thúy, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</li>
+                        <li><i class="fa-solid fa-phone"></i> Hotline: 039 541 5835</li>
+                        <li><i class="fa-solid fa-envelope"></i> Email: contact@mindx.edu.vn</li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2: Về MindX -->
+                <div class="footer-col">
+                    <h4>Về MindX</h4>
+                    <ul>
+                        <li><a href="#">Câu chuyện MindX</a></li>
+                        <li><a href="#">Đội ngũ giảng viên</a></li>
+                        <li><a href="#">Tin tức & Sự kiện</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Khóa học -->
+                <div class="footer-col">
+                    <h4>Khóa học</h4>
+                    <ul>
+                        <li><a href="#">Lập trình cho trẻ em (8-14 tuổi)</a></li>
+                        <li><a href="#">Lập trình cho cấp 3 (15-18 tuổi)</a></li>
+                        <li><a href="#">Lập trình cho sinh viên & người đi làm</a></li>
+                        <li><a href="#">Khóa học Data/AI</a></li>
+                        <li><a href="#">Thiết kế UI/UX</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Social -->
+                <div class="footer-col">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
             </div>
-            <p>&copy; 2026 MindX Technology School. All rights reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 MindX Technology School. All rights reserved. | <a href="#">Điều khoản bảo mật</a> | <a href="#">Chính sách hoàn học phí</a></p>
+            </div>
         </div>
     </footer>
 
-    <!-- Sticky Mobile CTA -->
+    <!-- JD Modal -->
+    <div id="jdModal" class="jd-modal-overlay">
+        <div class="jd-modal-content">
+            <div class="jd-modal-header">
+                <div>
+                    <h2 class="jd-modal-title" id="jdModalTitle">Job Title</h2>
+                    <div class="jd-modal-meta">
+                        <span id="jdModalLocation"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        <span id="jdModalSalary"><i class="fa-solid fa-money-bill-wave"></i> Salary</span>
+                    </div>
+                </div>
+                <button class="jd-modal-close" onclick="closeJDModal()">&times;</button>
+            </div>
+            <div class="jd-modal-body" id="jdModalBody">
+                <!-- JD Content here -->
+            </div>
+            <div class="jd-modal-footer">
+                <button class="btn btn-primary pulse" onclick="applyForJob()">Ứng tuyển vị trí này <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></button>
+            </div>
+        </div>
+    </div>    <script>
+        // ============================================================
+        // TOGGLE CARD DETAIL (Why Join section)
+        // ============================================================
+        function toggleCardDetail(card) {
+            const isExpanded = card.classList.contains('expanded');
+            // Close all other cards first
+            document.querySelectorAll('.feature-card-pro.expanded').forEach(c => {
+                if (c !== card) {
+                    c.classList.remove('expanded');
+                    c.querySelector('.card-toggle').innerHTML = '<i class="fa-solid fa-chevron-down"></i> Xem chi tiết';
+                }
+            });
+            // Toggle clicked card
+            card.classList.toggle('expanded');
+            const toggle = card.querySelector('.card-toggle');
+            if (card.classList.contains('expanded')) {
+                toggle.innerHTML = '<i class="fa-solid fa-chevron-up"></i> Thu gọn';
+            } else {
+                toggle.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Xem chi tiết';
+            }
+        }
 
-
-    <script>
         // ============================================================
         // GOOGLE SHEETS INTEGRATION
         // Bước 1: Dán Web App URL của Apps Script vào đây
@@ -472,7 +753,396 @@
                 if (target) target.scrollIntoView({ behavior: 'smooth' });
             });
         });
+
+        // ============================================================
+        // JD Modal Logic
+        // ============================================================
+        const jobDescriptions = {
+            "Quản lý trung tâm": {
+                location: "Toàn quốc",
+                salary: "20M - 30M",
+                content: `
+                    <h4>Mô tả công việc</h4>
+                    <ul>
+                        <li>Quản lý và điều hành mọi hoạt động của trung tâm để đạt mục tiêu doanh thu.</li>
+                        <li>Xây dựng và phát triển đội ngũ nhân sự (Tư vấn, CSKH, Giáo vụ).</li>
+                        <li>Đảm bảo chất lượng dịch vụ và sự hài lòng của học viên.</li>
+                    </ul>
+                    <h4>Yêu cầu</h4>
+                    <ul>
+                        <li>Ít nhất 2 năm kinh nghiệm quản lý trong lĩnh vực giáo dục, dịch vụ.</li>
+                        <li>Kỹ năng lãnh đạo, giao tiếp và giải quyết vấn đề tốt.</li>
+                        <li>Có tư duy kinh doanh và định hướng kết quả.</li>
+                    </ul>
+                    <h4>Quyền lợi</h4>
+                    <ul>
+                        <li>Thu nhập hấp dẫn: Lương cứng + Thưởng KPI không giới hạn.</li>
+                        <li>Môi trường startup trẻ trung, năng động, nhiều cơ hội thăng tiến.</li>
+                    </ul>
+                `
+            },
+            "Chuyên viên tư vấn tuyển sinh": {
+                location: "Toàn quốc",
+                salary: "15M - 25M",
+                content: `
+                    <h4>Mô tả công việc</h4>
+                    <ul>
+                        <li>Tư vấn các khóa học công nghệ của MindX cho phụ huynh và học sinh.</li>
+                        <li>Chăm sóc khách hàng cũ và mới, duy trì mối quan hệ tốt.</li>
+                        <li>Tham gia các sự kiện tuyển sinh của trung tâm.</li>
+                    </ul>
+                    <h4>Yêu cầu</h4>
+                    <ul>
+                        <li>Không yêu cầu kinh nghiệm, chấp nhận sinh viên mới ra trường.</li>
+                        <li>Kỹ năng giao tiếp tốt, không nói ngọng, nói lắp.</li>
+                        <li>Đam mê kinh doanh, thích chinh phục thử thách.</li>
+                    </ul>
+                    <h4>Quyền lợi</h4>
+                    <ul>
+                        <li>Lương cơ bản + Hoa hồng cao theo doanh thu.</li>
+                        <li>Được đào tạo bài bản kỹ năng Sales từ con số 0.</li>
+                    </ul>
+                `
+            },
+            "Chăm sóc khách hàng": {
+                location: "Toàn quốc",
+                salary: "10M - 15M",
+                content: `
+                    <h4>Mô tả công việc</h4>
+                    <ul>
+                        <li>Tiếp nhận và giải đáp các thắc mắc của phụ huynh, học viên.</li>
+                        <li>Theo dõi tình hình học tập và tương tác với phụ huynh định kỳ.</li>
+                        <li>Phối hợp với giáo viên để đảm bảo chất lượng lớp học.</li>
+                    </ul>
+                    <h4>Yêu cầu</h4>
+                    <ul>
+                        <li>Giọng nói chuẩn, nhẹ nhàng, kiên nhẫn.</li>
+                        <li>Khả năng xử lý tình huống khéo léo.</li>
+                        <li>Kinh nghiệm CSKH là một lợi thế.</li>
+                    </ul>
+                    <h4>Quyền lợi</h4>
+                    <ul>
+                        <li>Thu nhập ổn định, đánh giá tăng lương định kỳ.</li>
+                        <li>Làm việc trong môi trường giáo dục văn minh.</li>
+                    </ul>
+                `
+            },
+            "Trưởng nhóm chăm sóc khách hàng": {
+                location: "Toàn quốc",
+                salary: "15M - 25M",
+                content: `
+                    <h4>Mô tả công việc</h4>
+                    <ul>
+                        <li>Quản lý và điều phối đội ngũ CSKH đạt KPI đề ra.</li>
+                        <li>Đào tạo, hướng dẫn nghiệp vụ cho nhân viên mới.</li>
+                        <li>Giải quyết các tình huống khiếu nại phức tạp.</li>
+                    </ul>
+                    <h4>Yêu cầu</h4>
+                    <ul>
+                        <li>Có ít nhất 1-2 năm kinh nghiệm ở vị trí tương đương.</li>
+                        <li>Kỹ năng quản lý đội nhóm, phân bổ công việc.</li>
+                        <li>Chịu được áp lực cao trong công việc.</li>
+                    </ul>
+                    <h4>Quyền lợi</h4>
+                    <ul>
+                        <li>Thu nhập cạnh tranh, thưởng theo hiệu quả nhóm.</li>
+                        <li>Cơ hội thăng tiến lên Trưởng phòng.</li>
+                    </ul>
+                `
+            },
+            "Digital Marketing": {
+                location: "Hà Nội, TP.HCM",
+                salary: "13M - 18M",
+                content: `
+                    <h4>Mô tả công việc</h4>
+                    <ul>
+                        <li>Lên kế hoạch và triển khai các chiến dịch quảng cáo (Facebook, Google, Tiktok).</li>
+                        <li>Theo dõi, tối ưu chi phí quảng cáo để đạt mục tiêu lead.</li>
+                        <li>Nghiên cứu thị trường và đối thủ để đưa ra chiến lược phù hợp.</li>
+                    </ul>
+                    <h4>Yêu cầu</h4>
+                    <ul>
+                        <li>Có kinh nghiệm chạy quảng cáo thực chiến từ 1 năm trở lên.</li>
+                        <li>Nhạy bén với số liệu, có tư duy logic tốt.</li>
+                        <li>Biết sử dụng các công cụ phân tích (Google Analytics,...).</li>
+                    </ul>
+                    <h4>Quyền lợi</h4>
+                    <ul>
+                        <li>Ngân sách Marketing lớn, tự do sáng tạo thử nghiệm.</li>
+                        <li>Môi trường startup công nghệ tiên phong.</li>
+                    </ul>
+                `
+            },
+            "Content Marketing": {
+                location: "Hà Nội",
+                salary: "13M - 18M",
+                content: `
+                    <h4>Mô tả công việc</h4>
+                    <ul>
+                        <li>Sáng tạo nội dung trên các kênh Social Media (Fanpage, Tiktok, Website).</li>
+                        <li>Viết bài PR, kịch bản video, ấn phẩm truyền thông.</li>
+                        <li>Phối hợp với Designer/Video Editor để sản xuất thành phẩm.</li>
+                    </ul>
+                    <h4>Yêu cầu</h4>
+                    <ul>
+                        <li>Kinh nghiệm làm Content từ 1 năm trở lên.</li>
+                        <li>Kỹ năng viết tốt, đa dạng văn phong.</li>
+                        <li>Bắt trend nhanh nhạy, có tư duy hình ảnh.</li>
+                    </ul>
+                    <h4>Quyền lợi</h4>
+                    <ul>
+                        <li>Môi trường làm việc thoải mái, đồng nghiệp gen Z cực chất.</li>
+                        <li>Được tham gia các khóa học công nghệ miễn phí tại MindX.</li>
+                    </ul>
+                `
+            }
+        };
+
+        const jdModal = document.getElementById('jdModal');
+        let currentJobTitle = '';
+
+        function openJDModal(jobTitle) {
+            currentJobTitle = jobTitle;
+            const jobData = jobDescriptions[jobTitle];
+            
+            if (jobData) {
+                document.getElementById('jdModalTitle').innerText = jobTitle;
+                document.getElementById('jdModalLocation').innerHTML = '<i class="fa-solid fa-location-dot"></i> ' + jobData.location;
+                document.getElementById('jdModalSalary').innerHTML = '<i class="fa-solid fa-money-bill-wave"></i> ' + jobData.salary;
+                document.getElementById('jdModalBody').innerHTML = jobData.content;
+                
+                jdModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling background
+            }
+        }
+
+        function closeJDModal() {
+            jdModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function applyForJob() {
+            closeJDModal();
+            const selectElement = document.getElementById('applicant-position');
+            if(selectElement) {
+                // Try to set the select option if it matches
+                for (let i = 0; i < selectElement.options.length; i++) {
+                    if (selectElement.options[i].value === currentJobTitle) {
+                        selectElement.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            // Scroll to the application form
+            const target = document.getElementById('cta');
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target == jdModal) {
+                closeJDModal();
+            }
+        });
+
+        // Floating Registration Popup Logic
+        const toastData = [
+            { name: "Nguyễn Minh Anh", pos: "Chuyên viên tư vấn tuyển sinh", time: "2 phút trước" },
+            { name: "Trần Hoàng Nam", pos: "Digital Marketing", time: "5 phút trước" },
+            { name: "Lê Thị Quỳnh", pos: "Quản lý trung tâm", time: "12 phút trước" },
+            { name: "Phạm Minh Đức", pos: "Chăm sóc khách hàng", time: "7 phút trước" },
+            { name: "Vũ Khánh Linh", pos: "Content Marketing", time: "15 phút trước" }
+        ];
+
+        let toastIndex = 0;
+        let toastTimeout;
+
+        function showRegisterToast() {
+            const toast = document.getElementById('register-toast');
+            const desc = document.getElementById('toast-desc');
+            const time = document.getElementById('toast-time');
+            
+            if (!toast || !desc || !time) return;
+            
+            const data = toastData[toastIndex];
+            desc.innerHTML = `<strong>${data.name}</strong> vừa ứng tuyển vị trí <strong>${data.pos}</strong> thành công.`;
+            time.innerText = data.time;
+            
+            toast.classList.add('show');
+            
+            toastTimeout = setTimeout(() => {
+                hideRegisterToast();
+            }, 6000);
+            
+            toastIndex = (toastIndex + 1) % toastData.length;
+        }
+
+        function hideRegisterToast() {
+            const toast = document.getElementById('register-toast');
+            if (toast) toast.classList.remove('show');
+        }
+
+        function closeToast() {
+            clearTimeout(toastTimeout);
+            hideRegisterToast();
+        }
+
+        // Start toast cycle
+        setTimeout(() => {
+            showRegisterToast();
+            setInterval(showRegisterToast, 18000);
+        }, 4000);
+
+        // Floating Quick Apply Logic
+        function toggleQuickApply() {
+            const popup = document.getElementById('quick-apply-popup');
+            if (popup) {
+                popup.classList.toggle('active');
+            }
+        }
+
+        function submitQuickApply(event) {
+            event.preventDefault();
+            const name = document.getElementById('quick-name').value;
+            const phone = document.getElementById('quick-phone').value;
+            const pos = document.getElementById('quick-position').value;
+            const status = document.getElementById('quick-form-status');
+            
+            if (status) {
+                status.style.display = 'block';
+                status.style.color = 'green';
+                status.style.fontWeight = '600';
+                status.innerText = 'Đăng ký thành công! Cảm ơn bạn.';
+            }
+            
+            // Try to forward to Google Sheet if there is a global function
+            if (typeof submitToGoogleSheet === 'function') {
+                // Construct pseudo event or payload if needed
+            }
+            
+            setTimeout(() => {
+                document.getElementById('quickApplyForm').reset();
+                if (status) status.style.display = 'none';
+                toggleQuickApply();
+            }, 2000);
+        }
     </script>
+
+    <!-- Floating Registration Popup (Toast) -->
+    <div id="register-toast" class="register-toast">
+        <div class="toast-avatar">
+            <i class="fa-solid fa-user-check"></i>
+        </div>
+        <div class="toast-content">
+            <div class="toast-title">Đăng ký mới</div>
+            <div class="toast-desc" id="toast-desc">Đang tải...</div>
+            <span class="toast-time" id="toast-time">Vừa xong</span>
+        </div>
+        <button class="toast-close" onclick="closeToast()">&times;</button>
+    </div>
+
+    <!-- Floating Quick Apply Widget -->
+    <div id="quick-apply-widget" class="quick-apply-widget">
+        <!-- Floating Button -->
+        <button id="quick-apply-toggle" class="quick-apply-toggle" onclick="toggleQuickApply()">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Ứng tuyển nhanh</span>
+        </button>
+        
+        <!-- Mini Popup Form -->
+        <div id="quick-apply-popup" class="quick-apply-popup">
+            <div class="quick-apply-header">
+                <h3>Ứng tuyển nhanh</h3>
+                <button class="quick-apply-close" onclick="toggleQuickApply()">&times;</button>
+            </div>
+            <form id="quickApplyForm" onsubmit="submitQuickApply(event)">
+                <input type="text" id="quick-name" placeholder="Họ và tên *" required>
+                <input type="tel" id="quick-phone" placeholder="Số điện thoại *" required pattern="[0-9]{9,11}">
+                <select id="quick-position" required>
+                    <option value="" disabled selected>Vị trí ứng tuyển *</option>
+                    <option value="Quản lý trung tâm">Quản lý trung tâm</option>
+                    <option value="Chuyên viên tư vấn tuyển sinh">Chuyên viên tư vấn tuyển sinh</option>
+                    <option value="Chăm sóc khách hàng">Chăm sóc khách hàng</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Content Marketing">Content Marketing</option>
+                </select>
+                <div class="quick-cv-upload">
+                    <label for="quick-cv">Tải CV lên (Tối đa 5MB)</label>
+                    <input type="file" id="quick-cv" accept=".pdf,.doc,.docx">
+                </div>
+                <button type="submit" class="btn-quick-submit">Gửi thông tin</button>
+            </form>
+            <div id="quick-form-status" style="display:none; font-size: 0.85rem; margin-top: 10px; text-align: center;"></div>
+        </div>
+    </div>
+    <!-- Counter Animation Script -->
+    <script>
+        (function () {
+            // Easing function: ease out quart
+            function easeOutQuart(t) {
+                return 1 - Math.pow(1 - t, 4);
+            }
+
+            function formatNumber(num, separator) {
+                if (!separator) return num.toString();
+                return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator);
+            }
+
+            function animateCounter(el) {
+                const target = parseInt(el.dataset.target, 10);
+                const suffix = el.dataset.suffix || '';
+                const separator = el.dataset.separator || '';
+                const duration = 1800; // ms
+                const startTime = performance.now();
+
+                function update(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easedProgress = easeOutQuart(progress);
+                    const current = Math.round(easedProgress * target);
+                    el.textContent = formatNumber(current, separator) + suffix;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(update);
+                    } else {
+                        el.textContent = formatNumber(target, separator) + suffix;
+                    }
+                }
+
+                requestAnimationFrame(update);
+            }
+
+            // Observe when trust-badges section enters viewport
+            const badge = document.getElementById('trust-badges');
+            if (!badge) return;
+
+            let hasAnimated = false;
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting && !hasAnimated) {
+                        hasAnimated = true;
+                        // Animate all count-up elements with staggered delay
+                        document.querySelectorAll('.count-up').forEach(function (el, index) {
+                            setTimeout(function () {
+                                animateCounter(el);
+                            }, index * 200);
+                        });
+                        // Pulse effect for text stat
+                        const textEl = document.querySelector('.count-text-pulse');
+                        if (textEl) {
+                            setTimeout(function () {
+                                textEl.classList.add('pulse-once');
+                            }, 400);
+                        }
+                        observer.disconnect();
+                    }
+                });
+            }, { threshold: 0.4 });
+
+            observer.observe(badge);
+        })();
+    </script>
+
 </body>
 
 </html>
